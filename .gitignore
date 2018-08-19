@@ -1,0 +1,29 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Project related files #
+#########################
+node_modules
+*.log
+*.po
+.env
+.next
+dist
+run
+tmp
+
+# OS generated files #
+######################
+.DS_Store
+
+# IDE generated files #
+#######################
+.idea
+.project
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Gitbook generated files #
+###########################
+docs/_book/*
+docs/_books/*

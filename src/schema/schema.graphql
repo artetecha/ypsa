@@ -1,0 +1,19 @@
+directive @authenticationRequired on MUTATION
+directive @anonymityRequired on MUTATION
+
+type User {
+  id: ID!
+  username: String!
+  email: String
+}
+
+type Query {
+  currentUser: User
+}
+
+type Mutation {
+  login(username: String, password: String!): User @anonymityRequired
+  register(username: String!, password: String!, email: String): User
+    @authenticationRequired
+  logout: Boolean @authenticationRequired
+}
