@@ -6,7 +6,7 @@ This example was also a playground for me to play with GraphQL Yoga, Prisma and 
 
 You can likewise decide to play with example and change it to your likeness, swapping Prisma for another back-end, or rely on plain Apollo Server rather than Yoga, etc.
 
-## Things will need, first
+## First things first
 
 This example uses Prisma Enterprise Open Source package rather than the Prisma Cloud Service. I set up the my Prisma server with a Postgres DB using [the official guide](https://www.prisma.io/docs/tutorials/setup-prisma/create-new-db/postgres-eiyov7erah).
 
@@ -23,7 +23,7 @@ If you don't have Docker installed already, you can download it for your platfor
 ### Prisma CLI
 
 ```
-npm install -g prisma
+$ npm install -g prisma
 # or
 # yarn global add prisma
 ```
