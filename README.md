@@ -6,7 +6,7 @@ This example was also a playground for me to play with GraphQL Yoga, Prisma and 
 
 You can likewise decide to play with example and change it to your likeness, swapping Prisma for another back-end, or rely on plain Apollo Server rather than Yoga, etc.
 
-## Things will need, first
+## First things first
 
 This example uses Prisma Enterprise Open Source package rather than the Prisma Cloud Service. I set up the my Prisma server with a Postgres DB using [the official guide](https://www.prisma.io/docs/tutorials/setup-prisma/create-new-db/postgres-eiyov7erah).
 
@@ -22,26 +22,26 @@ If you don't have Docker installed already, you can download it for your platfor
 
 ### Prisma CLI
 
-```
-npm install -g prisma
+```bash
+$ npm install -g prisma
 # or
 # yarn global add prisma
 ```
 
 ## Get started
 
-```
+```bash
 $ git checkout git@github.com:artetecha/ypsa.git
 $ cd ypsa
 $ docker-machine up -d
 $ prisma deploy
 $ yarn install # you can use npm, but bear in mind this repo provides no package-lock.json
-$ yarn start
+$ yarn start # or yarn run dev if you want to start the app via nodemon and play with your changes
 ```
 
-### One more thing
+### Enabling sessions in GraphQL Playground
 
-Yoga comes with [GraphQL Playground](https://github.com/prisma/graphql-playground) rather than the usual [GraphiQL]([GitHub - graphql/graphiql: An in-browser IDE for exploring GraphQL.]https://github.com/graphql/graphiql). Playground by default does not have sessions enabled, and Yoga doesn’t expose its options yet, so I couldn’t make the server start with different defaults. So there’s one more thing you have to do before you start authenticating:
+Yoga comes with [GraphQL Playground](https://github.com/prisma/graphql-playground) rather than the usual [GraphiQL](https://github.com/graphql/graphiql). Playground by default does not have sessions enabled, and Yoga doesn’t expose its options yet, so I couldn’t make the server start with different defaults. So there’s one more thing you have to do before you start authenticating:
 
 1. Go to the local server URL (http://localhost:4000/graphql)
 2. Click on the cogwheel icon to access the settings
