@@ -6,9 +6,6 @@
   "scripts": {
     "start": "env NODE_ENV=production node src/server.js",
     "dev": "env NODE_ENV=development nodemon src/server.js --watch src -e js,graphql --ignore *.test.js",
-    "test": "env NODE_ENV='test' ava --verbose",
-    "test:tap": "env NODE_ENV='test' ava --tap --verbose",
-    "test:watch": "env NODE_ENV='test' ava --watch --verbose"
   },
   "author": "Vincenzo Russo <v@artetecha.com>",
   "license": "MIT",
