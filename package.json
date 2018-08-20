@@ -1,5 +1,5 @@
 {
-  "name": "graqhql-sess-auth-prisma",
+  "name": "ypsa",
   "version": "1.0.0",
   "description": "Session based authentication for GraphQL over Prisma.io",
   "main": "src/server.js",
