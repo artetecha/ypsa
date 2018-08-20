@@ -36,7 +36,7 @@ $ cd ypsa
 $ docker-machine up -d
 $ prisma deploy
 $ yarn install # you can use npm, but bear in mind this repo provides no package-lock.json
-$ yarn start
+$ yarn start # or yarn run dev if you want to start the app via nodemon and play with your changes
 ```
 
 ### One more thing
