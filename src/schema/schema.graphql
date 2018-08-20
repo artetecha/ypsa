@@ -9,7 +9,7 @@ type User {
 
 type Query {
   currentUser: User
-  users: [User]
+  users: [User] @authenticationRequired
 }
 
 type Mutation {
