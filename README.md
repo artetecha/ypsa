@@ -22,7 +22,7 @@ If you don't have Docker installed already, you can download it for your platfor
 
 ### Prisma CLI
 
-```
+```bash
 $ npm install -g prisma
 # or
 # yarn global add prisma
@@ -30,7 +30,7 @@ $ npm install -g prisma
 
 ## Get started
 
-```
+```bash
 $ git checkout git@github.com:artetecha/ypsa.git
 $ cd ypsa
 $ docker-machine up -d
