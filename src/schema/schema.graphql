@@ -1,5 +1,5 @@
-directive @authenticationRequired on MUTATION
-directive @anonymityRequired on MUTATION
+directive @authenticationRequired on QUERY | MUTATION
+directive @anonymityRequired on QUERY | MUTATION
 
 type User {
   id: ID!
