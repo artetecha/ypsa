@@ -1,5 +1,5 @@
-const { currentUser } = require("./queries/User");
+const User = require("./queries/User");
 
 module.exports = {
-  currentUser
+  ...User
 };
