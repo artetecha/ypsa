@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "env NODE_ENV=production node src/server.js",
-    "dev": "env NODE_ENV=development nodemon src/server.js --watch src -e js,graphql --ignore *.test.js",
+    "dev": "env NODE_ENV=development nodemon src/server.js --watch src -e js,graphql --ignore *.test.js"
   },
   "author": "Vincenzo Russo <v@artetecha.com>",
   "license": "MIT",
