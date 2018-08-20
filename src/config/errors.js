@@ -1,4 +1,4 @@
-const createError = require("apollo-errors").createError;
+const { createError } = require("apollo-errors");
 
 module.exports.UnknownError = createError("UnknownError", {
   message: "An unknown error has occurred!  Please try again later"
