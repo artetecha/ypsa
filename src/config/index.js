@@ -1,8 +1,8 @@
 // Server.
 const server = {
   port: process.env.PORT || 4000,
-  endpoint: "/graphql",
-  playground: "/graphql",
+  endpoint: "/",
+  playground: "/",
   subscriptions: false,
   cors: {
     origin: [/https?:\/\/.*/],

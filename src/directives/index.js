@@ -27,11 +27,7 @@ class AnonymityRequiredDirective extends SchemaDirectiveVisitor {
   }
 }
 
-const schemaDirectives = {
+module.exports = {
   authenticationRequired: AuthenticationRequiredDirective,
   anonymityRequired: AnonymityRequiredDirective
-};
-
-module.exports = {
-  schemaDirectives
 };

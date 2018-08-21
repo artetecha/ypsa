@@ -1,14 +1,16 @@
 const { GraphQLServer } = require("graphql-yoga");
 const session = require("express-session");
 const MemoryStore = require("memorystore")(session);
-const resolvers = require("./resolvers");
 const passport = require("./middleware/passport");
 const prisma = require("./connectors/prisma");
 const config = require("./config");
-const { schemaDirectives } = require("./directives");
 
 // Schema.
 const typeDefs = config.schema;
+// Resolvers.
+const resolvers = require("./resolvers");
+// Directives.
+const schemaDirectives = require("./directives");
 
 // Instantiate server.
 const server = new GraphQLServer({
@@ -41,13 +43,6 @@ server.express.use(
 // Passport initialisation.
 server.express.use(passport.initialize());
 server.express.use(passport.session());
-
-// This is here mainly for when the app runs in the local docker container.
-// Lando displays a red (meaning "broken") URL when an app does not respond
-// correctly on the root. I guess Lando should stop making assumptions.
-server.express.get("/", (req, res) => {
-  res.redirect(301, `${config.server.endpoint}`);
-});
 
 server.start(config.server, ({ port, endpoint }) =>
   console.log(`> Server is ready on http://localhost:${port}${endpoint}`)

@@ -1,6 +1,6 @@
 {
   "name": "ypsa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Session based authentication for GraphQL over Prisma.io",
   "main": "src/server.js",
   "scripts": {
