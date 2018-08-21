@@ -43,7 +43,7 @@ $ yarn start # or yarn run dev if you want to start the app via nodemon and play
 
 Yoga comes with [GraphQL Playground](https://github.com/prisma/graphql-playground) rather than the usual [GraphiQL](https://github.com/graphql/graphiql). Playground by default does not have sessions enabled, and Yoga doesn’t expose its options yet, so I couldn’t make the server start with different defaults. So there’s one more thing you have to do before you start authenticating:
 
-1. Go to the local server URL (http://localhost:4000/graphql)
+1. Go to the local server URL (http://localhost:4000/)
 2. Click on the cogwheel icon to access the settings
 3. Change the value of `request.credentials` from `omit` to `include`
 4. Save the settings
