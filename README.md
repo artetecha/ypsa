@@ -33,7 +33,7 @@ $ npm install -g prisma
 ```bash
 $ git checkout git@github.com:artetecha/ypsa.git
 $ cd ypsa
-$ docker-machine up -d
+$ docker-machine up -d # to stop the containers when you're done: docker-machine down
 $ prisma deploy
 $ yarn install # you can use npm, but bear in mind this repo provides no package-lock.json
 $ yarn start # or yarn run dev if you want to start the app via nodemon and play with your changes
