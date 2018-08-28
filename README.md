@@ -76,4 +76,4 @@ and the following mutations:
 
 ## Directives
 
-I decided to user GraphQL directives to implement authentication. This means you can easily change the access level of a specific query/mutation by adding/removing one of the available directives. See `src/schema/schema.graphql` for more information.
+I decided to use GraphQL directives to implement authentication. This means you can easily change the access level of a specific query/mutation by adding/removing one of the available directives. See `src/schema/schema.graphql` for more information.
